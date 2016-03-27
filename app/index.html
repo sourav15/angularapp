@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
+<script src="ajax.js"></script>
+<script src="user.js"></script>
+</head>
+
+<body>
+<div ng-app="register" ng-controller="RegisterController">
+<b>Register</b>
+<div>
+UserName: <input type="text" ng-model="username" required>
+</div>
+<div>
+Password: <input type="text" ng-model="password" required>
+</div>
+<div>
+<button class="btn" ng-click="register()">Register</button>
+</div>
+</div>
+</body>
+</html>
